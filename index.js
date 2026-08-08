@@ -1,7 +1,14 @@
 /* =========================================================
    SIDDHARTH JHA — PORTFOLIO
    Interaction layer
+
+   Wrapped in a strict-mode IIFE: nothing in here leaks into the
+   global (window) scope, so no other script — injected via a
+   compromised extension, a bad ad, or any other third party —
+   can read, call, or overwrite these functions or variables.
 ========================================================= */
+(function () {
+'use strict';
 
 document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
 
@@ -261,3 +268,5 @@ window.addEventListener('resize', () => {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeMobileMenu();
 });
+
+})();

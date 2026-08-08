@@ -3,6 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- ============ SECURITY ============
+     GitHub Pages serves static files only and does not allow setting
+     custom HTTP response headers (no X-Frame-Options, Strict-Transport-Security,
+     X-Content-Type-Options, or Permissions-Policy are possible from here —
+     those require server/proxy-level control, e.g. a Cloudflare proxy in front
+     of the site). The Content-Security-Policy and Referrer-Policy below are the
+     strongest protections that CAN be enforced from within the HTML itself. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests; require-trusted-types-for 'script'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Siddharth Jha — MuleSoft Engineer &amp; AI/ML Developer</title>
 <meta name="description" content="Siddharth Jha — MuleSoft Engineer at Safran. AI/ML developer building continual learning systems, computer vision tools and enterprise integrations.">
 <meta name="theme-color" content="#07080b">
@@ -86,7 +96,7 @@
         <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
     </ul>
     <div class="mobile-menu-footer">
-        <a href="assets/resume/Siddharth_Jha_Resume.pdf" target="_blank" class="btn btn-primary">Download Resume</a>
+        <a href="assets/resume/Siddharth_Jha_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download Resume</a>
     </div>
 </div>
 
@@ -127,7 +137,7 @@
                 <span>View Projects</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="assets/resume/Siddharth_Jha_Resume.pdf" class="btn btn-secondary magnetic" target="_blank">
+            <a href="assets/resume/Siddharth_Jha_Resume.pdf" class="btn btn-secondary magnetic" target="_blank" rel="noopener noreferrer">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 <span>Resume</span>
             </a>
@@ -137,13 +147,13 @@
             <a href="mailto:siddharthdjha04@gmail.com" aria-label="Email" class="social-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6z" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="https://linkedin.com/in/siddharth005" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+            <a href="https://linkedin.com/in/siddharth005" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 10v6.5M7.5 7.2v.1M11.5 16.5V13c0-1.4.9-2.3 2-2.3s2 .9 2 2.3v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
             </a>
-            <a href="https://github.com/dist1" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+            <a href="https://github.com/dist1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
             </a>
-            <a href="https://wa.me/9921145725" target="_blank" rel="noopener" aria-label="Phone" class="social-icon">
+            <a href="https://wa.me/9921145725" target="_blank" rel="noopener noreferrer" aria-label="Phone" class="social-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.5 4h2l1.5 4-2 1.5a10 10 0 005 5l1.5-2 4 1.5v2c0 1.1-.9 2-2 2C10.6 18 6 13.4 6 7.5c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
             </a>
         </div>
@@ -300,7 +310,7 @@
             </div>
 
             <div class="project-actions">
-                <a href="https://github.com/Ajay-Deshmukh/lapis-whale" target="_blank" rel="noopener" class="btn btn-primary magnetic">
+                <a href="https://github.com/Ajay-Deshmukh/lapis-whale" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
                     <span>View on GitHub</span>
                 </a>
@@ -350,7 +360,7 @@
             </div>
 
             <div class="project-actions">
-                <a href="https://github.com/dist1/vakel" target="_blank" rel="noopener" class="btn btn-primary magnetic">
+                <a href="https://github.com/dist1/vakel" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
                     <span>View on GitHub</span>
                 </a>
@@ -399,7 +409,7 @@
             </div>
 
             <div class="project-actions">
-                <a href="https://github.com/dist1/millets" target="_blank" rel="noopener" class="btn btn-primary magnetic">
+                <a href="https://github.com/dist1/millets" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
                     <span>View on GitHub</span>
                 </a>
@@ -686,7 +696,7 @@
                 </div>
             </a>
 
-            <a href="https://linkedin.com/in/siddharth005" target="_blank" rel="noopener" class="contact-card magnetic">
+            <a href="https://linkedin.com/in/siddharth005" target="_blank" rel="noopener noreferrer" class="contact-card magnetic">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 10v6.5M7.5 7.2v.1M11.5 16.5V13c0-1.4.9-2.3 2-2.3s2 .9 2 2.3v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                 <div>
                     <span class="contact-label">LinkedIn</span>
@@ -694,7 +704,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/dist1" target="_blank" rel="noopener" class="contact-card magnetic">
+            <a href="https://github.com/dist1" target="_blank" rel="noopener noreferrer" class="contact-card magnetic">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
                 <div>
                     <span class="contact-label">GitHub</span>
@@ -702,7 +712,7 @@
                 </div>
             </a>
 
-            <a href="https://wa.me/9921145725" target="_blank" rel="noopener" class="contact-card magnetic">
+            <a href="https://wa.me/9921145725" target="_blank" rel="noopener noreferrer" class="contact-card magnetic">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6.5 4h2l1.5 4-2 1.5a10 10 0 005 5l1.5-2 4 1.5v2c0 1.1-.9 2-2 2C10.6 18 6 13.4 6 7.5c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
                 <div>
                     <span class="contact-label">Phone</span>
